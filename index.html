@@ -34,6 +34,26 @@
         .profile-info p {
             line-height: 1.6;
         }
+        .button{
+background-color: aquamarine;
+        }
+        .social-button {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .google {
+            background-color: #db4437; /* Цвет кнопки Google */
+        }
+        .facebook {
+            background-color: #4267B2; /* Цвет кнопки Facebook */
+        }
     </style>
 </head>
 <body>
@@ -60,6 +80,15 @@
             <li>Навык 2</li>
         </ul>
     </div>
+
+    <button class="button">Подписаться на новости</button>
+
+    <div class="login-container">
+    <h2>Вход через соцсети</h2>
+    <button class="social-button google" onclick="window.location.href='/auth/google'">Войти через Google</button>
+    <button class="social-button facebook" onclick="window.location.href='/auth/facebook'">Войти через Facebook</button>
+</div>
+    
 </div>
 
 </body>
